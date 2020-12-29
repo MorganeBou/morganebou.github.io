@@ -19,16 +19,43 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
+
+    <style>
+        .sidebar-wrapper {
+            font-size: 12px;
+        }
+
+        .sidebar-wrapper .name {
+            font-size: 24px;
+        }
+
+        .sidebar-wrapper .contact-container {
+            padding: 16px;
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+
+            .sidebar-wrapper a, .sidebar-wrapper {
+                color: #666;
+                text-decoration: none;
+            }
+        }
+    </style>
+
 </head>
+
 
 <body>
 <div class="wrapper">
     <div class="sidebar-wrapper">
         <div class="profile-container">
             <img class="profile" src="assets/images/profile.jpg" alt=""/>
-            <h1 class="name">Morgane </h1>
-            <h1 class="name">BOURGUENOLLE </h1>
-            <h3 class="tagline">Developpeuse Web</h3>
+            <h1 class="name">Morgane</h1>
+            <h1 class="name">BOURGUENOLLE</h1>
+            <h3 class="tagline">Développeuse Web</h3>
         </div><!--//profile-container-->
 
         <div class="contact-container container-block">
@@ -37,38 +64,31 @@
                 </li>
                 <li class="phone"><i class="fas fa-phone"></i><a href="tel:06 45 33 54 37">06 45 33 54 37</a></li>
 
-                <li class="linkedin"><i class="fab fa-linkedin-in"></i><a href="#" target="_blank">linkedin.com/in/MorganeBou/</a>
+                <li class="linkedin"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/MorganeBou/"
+                                                                          target="_blank">linkedin.com/in/MorganeBou</a>
                 </li>
-                <li class="github"><i class="fab fa-github"></i><a href="#" target="_blank">github.com/MorganeBou</a>
+                <li class="github"><i class="fab fa-github"></i><a href="https://github.com/MorganeBou" target="_blank">github.com/MorganeBou</a>
                 </li>
 
             </ul>
         </div><!--//contact-container-->
-        <div class="education-container container-block">
-            <h2 class="container-block-title">Formation</h2>
-            <div class="item">
-                <h4 class="degree">Formation Développeur Web</h4>
-                <h5 class="meta">Ecole centrale de Nantes</h5>
-                <div class="time">novembre 2019 - mars 2020</div>
-            </div><!--//item-->
-            <div class="item">
-                <h4 class="degree">Master 2 Profesionnel Métiers du Diagnostic Sociologique </h4>
-                <h5 class="meta">Université de Nantes</h5>
-                <div class="time">2013 - 2015</div>
-            </div><!--//item-->
-            <div class="item">
-                <h4 class="degree">Licence 3 - Sociologie</h4>
-                <h5 class="meta">Université de Nottingham </h5>
-                <div class="time">2012 - 2013</div>
-            </div><!--//item-->
-        </div><!--//education-container-->
+
 
         <div class="languages-container container-block">
             <h2 class="container-block-title">Langues</h2>
             <ul class="list-unstyled interests-list">
                 <li>Anglais <span class="lang-desc">(professionnel)</span></li>
+                <li>Allemand <span class="lang-desc">(notions)</span></li>
+            </ul>
+        </div>
 
-
+        <div class="interests-container container-block">
+            <h2 class="container-block-title">Hobies</h2>
+            <ul class="list-unstyled interests-list">
+                <li>Voyages</li>
+                <li>Bénévolat</li>
+                <li>Escalade</li>
+                <li>Yoga</li>
             </ul>
         </div>
 
@@ -81,7 +101,7 @@
             <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Kissuije ?</h2>
             <div class="summary">
                 <p> Hello moi c'est Momo et je cherche du boulot
-                J'ai un profil orienté .... </p>
+                    J'ai un profil orienté .... </p>
             </div><!--//summary-->
         </section><!--//section-->
 
@@ -91,30 +111,51 @@
             <div class="item">
                 <div class="meta">
                     <div class="upper-row">
-                        <h3 class="job-title">Analyste Programmeur</h3>
-                        <div class="time">mars 2020 - maintenant</div>
+                        <h3 class="job-title">Analyste Programmeur junior</h3>
+                        <div class="time">mars 2020 - Aujourd’hui</div>
                     </div><!--//upper-row-->
                     <div class="company">Apside, Nantes</div>
                 </div><!--//meta-->
                 <div class="details">
-                    <p>A S2E depuis septembre : Publication de contenu sur des sites d'épargnes salariales</p>
                     <p>
-                        Concepteur développeur d’applications à Apside
-                        Mission : Développement d’applications au sein du pôle Innovation et Delivery.
-                        Activité / Réalisation :
-                        ●	Conception technique et fonctionnelle
-                        ●	Conception du modèle de données
-                        ●	Maquettage des écrans
-                        ●	Participation à des ateliers d’expression de besoins
-                        ●	Développements Fullstack
-                        ●	Démos utilisateurs
-                        Contexte : Agile Scrum, Equipe distante
-                        Environnement : Trello, Git, HTML, CSS, Bootstrap, Java Spring, ReactJS, PostgreSQL
+                        Développement d’application interne en React/Java
+                    </p>
+                    <ul>
+                        <li>Conception technique et fonctionnelle</li>
+                        <li>Conception du modèle de données</li>
+                        <li>Développements front</li>
+                        <li>Environnement : ReactJS, Java Spring, PostgreSQL, HTML, CSS, Bootstrap, Git, Trello</li>
+                    </ul>
+                    <p>
+                        Mission chez S2E
+                    </p>
+                    <ul>
+                        <li>Gestion des publications de contenu sur des portails bancaires web et mobile</li>
+                        <li>Suivi des montées de version et status de maintenance</li>
+                    </ul>
+                </div><!--//details-->
+            </div><!--//item-->
 
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title">Chargée d'administration</h3>
+                        <div class="time">2015 - 2019</div>
+                    </div><!--//upper-row-->
+                    <div class="company">Région Nantaise</div>
+                </div><!--//meta-->
+                <div class="details">
+                    <p>
+                        Missions en collectivités territoriales avec des élus locaux.<br/>
+                        Planification et coordination d'évenements
                     </p>
 
                 </div><!--//details-->
             </div><!--//item-->
+        </section><!--//section-->
+
+        <section class="section experiences-section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>Formations</h2>
 
             <div class="item">
                 <div class="meta">
@@ -128,8 +169,8 @@
                     <p></p>
                     <ul>
                         <li>Javascript : VueJs, React</li>
-                        <li>HTML, CSS, Bootstrap </li>
-                        <li>Java : JEE, Sping, Hibernate </li>
+                        <li>HTML, CSS, Bootstrap</li>
+                        <li>Java : JEE, Sping, Hibernate</li>
                         <li>Base de données : MySQL, Postgres</li>
                         <li>Linux : Git, Docker, SSH</li>
                         <li>Méthodologies : Scrum, Kanban, Trello</li>
@@ -141,102 +182,105 @@
             <div class="item">
                 <div class="meta">
                     <div class="upper-row">
-                        <h3 class="job-title">Chargée d'administration</h3>
-                        <div class="time">2015 - 2019</div>
+                        <h3 class="job-title">Master 2 Profesionnel Métiers du Diagnostic Sociologique </h3>
+                        <div class="time">2013 - 2015</div>
                     </div><!--//upper-row-->
-                    <div class="company">région Nantaise</div>
+                    <div class="company">Université de Nantes</div>
                 </div><!--//meta-->
-                <div class="details">
-                    <p>PlusieursExperiences missions en collectivités territoriales pour des élus locaux ou des services.
-                        Planification et coordination des rendez-vous et déplacements </p>
+            </div><!--//item-->
 
-                </div><!--//details-->
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title">Licence 3 - Sociologie</h3>
+                        <div class="time">2012 - 2013</div>
+                    </div><!--//upper-row-->
+                    <div class="company">Université de Nottingham 🇬🇧</div>
+                </div><!--//meta-->
             </div><!--//item-->
 
 
         </section><!--//section-->
 
         <section class="section projects-section">
-            <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Projets</h2>
-            <div class="intro">
-                <p>Quels projets et pourquoi ?!</p>
-            </div><!--//intro-->
+            <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Projets perso</h2>
             <div class="item">
-                <span class="project-title"><a
-                        href=""
-                        target="_blank">CoderPro</a></span> - <span class="project-tagline">A responsive website template designed to help developers launch their software projects. </span>
-
-            </div><!--//item-->
+                <span class="project-title font-weight-bold">Quixx VueJS</span> -
+                <span class="project-tagline">
+                    Réplication du jeu de plateau Quixx avec mode multijoueur
+                </span>
+            </div>
             <div class="item">
-                <span class="project-title"><a
-                        href=""
-                        target="_blank">Application d'évalutation</a></span> - <span class="project-tagline">Application pour évaluer pour permettre aux managers suivi + éval de salariés.App dans le cadre de la formation</span>
+                <span class="project-title font-weight-bold">5 Minute Dungeon VueJS</span> -
+                <span class="project-tagline">
+                    Jeu de rapidité coopératif en ligne se basant sur le jeu de cartes.
+                </span>
             </div>
         </section>
 
-<!--        <section class="skills-section section">-->
-<!--            <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Compétences</h2>-->
-<!--            <div class="skillset">-->
-<!--                <div class="item">-->
-<!--                    <h3 class="level-title">Javascript : VueJs, React</h3>-->
-<!--                    <div class="progress level-bar">-->
-<!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%"-->
-<!--                             aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                    </div>-->
-<!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
+        <!--        <section class="skills-section section">-->
+        <!--            <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Compétences</h2>-->
+        <!--            <div class="skillset">-->
+        <!--                <div class="item">-->
+        <!--                    <h3 class="level-title">Javascript : VueJs, React</h3>-->
+        <!--                    <div class="progress level-bar">-->
+        <!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%"-->
+        <!--                             aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>-->
+        <!--                    </div>-->
+        <!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
 
-<!--                <div class="item">-->
-<!--                    <h3 class="level-title"> HTML, CSS, Bootstrap</h3>-->
-<!--                    <div class="progress level-bar">-->
-<!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%"-->
-<!--                             aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                    </div>-->
-<!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
+        <!--                <div class="item">-->
+        <!--                    <h3 class="level-title"> HTML, CSS, Bootstrap</h3>-->
+        <!--                    <div class="progress level-bar">-->
+        <!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%"-->
+        <!--                             aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>-->
+        <!--                    </div>-->
+        <!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
 
-<!--                <div class="item">-->
-<!--                    <h3 class="level-title"> Java : JEE, Sping, Hibernate</h3>-->
-<!--                    <div class="progress level-bar">-->
-<!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%"-->
-<!--                             aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                    </div>-->
-<!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
+        <!--                <div class="item">-->
+        <!--                    <h3 class="level-title"> Java : JEE, Sping, Hibernate</h3>-->
+        <!--                    <div class="progress level-bar">-->
+        <!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%"-->
+        <!--                             aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>-->
+        <!--                    </div>-->
+        <!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
 
-<!--                <div class="item">-->
-<!--                    <h3 class="level-title"> Base de données : MySQL, Postgres</h3>-->
-<!--                    <div class="progress level-bar">-->
-<!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%"-->
-<!--                             aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                    </div>-->
-<!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
+        <!--                <div class="item">-->
+        <!--                    <h3 class="level-title"> Base de données : MySQL, Postgres</h3>-->
+        <!--                    <div class="progress level-bar">-->
+        <!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%"-->
+        <!--                             aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
+        <!--                    </div>-->
+        <!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
 
 
-<!--                <div class="item">-->
-<!--                    <h3 class="level-title"> Linux : Git, Docker, SSH </h3>-->
-<!--                    <div class="progress level-bar">-->
-<!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 85%"-->
-<!--                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                    </div>-->
-<!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
+        <!--                <div class="item">-->
+        <!--                    <h3 class="level-title"> Linux : Git, Docker, SSH </h3>-->
+        <!--                    <div class="progress level-bar">-->
+        <!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 85%"-->
+        <!--                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>-->
+        <!--                    </div>-->
+        <!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
 
-<!--                <div class="item">-->
-<!--                    <h3 class="level-title"> Méthodologies : Scrum, Kanban, Trello </h3>-->
-<!--                    <div class="progress level-bar">-->
-<!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 60%"-->
-<!--                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                    </div>-->
-<!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
+        <!--                <div class="item">-->
+        <!--                    <h3 class="level-title"> Méthodologies : Scrum, Kanban, Trello </h3>-->
+        <!--                    <div class="progress level-bar">-->
+        <!--                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 60%"-->
+        <!--                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>-->
+        <!--                    </div>-->
+        <!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
 
-<!--            </div>-->
-<!--        </section>&lt;!&ndash;//skills-section&ndash;&gt;-->
+        <!--            </div>-->
+        <!--        </section>&lt;!&ndash;//skills-section&ndash;&gt;-->
+    </div><!--//main-body-->
+</div>
 
-<!--    </div>&lt;!&ndash;//main-body&ndash;&gt;-->
-<!--</div>-->
-
-<footer class="footer">
+<footer class="footer no-print">
     <div class="text-center">
         <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-                                                                                  target="_blank">Xiaoying Riley</a> for
+        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                href="http://themes.3rdwavemedia.com"
+                target="_blank">Xiaoying Riley</a> for
             developers
         </small>
     </div><!--//container-->
